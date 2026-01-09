@@ -12,12 +12,14 @@ int main() {
 
     float percentage = (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) / 5;
 
-    cout << "\n======RESULTS======\n";
+    cout << "\n========RESULTS========\n";
     for (int i =0; i<5; i++) {
-        cout << sub[i] << " marks: " << arr[i] << endl;
+        cout << "Marks in " << sub[i] << " : " << arr[i] << endl;
     }
-    cout << "\nTotal Marks: " << (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) << "/500" << endl;
-    cout << "Percentage: " << percentage << "%" << endl;
+    cout << "-----------------------" << "\n=> Total Marks: " << (arr[0] + arr[1] + arr[2] + arr[3] + arr[4]) << "/500" << endl;
+    cout << "=> PERCENTAGE: " << percentage << "%" << endl;
+    cout << "-----------------------" << endl;
+
     cout << "\nGrades in each subject:\n";
     for (int i =0; i<5; i++) {
         if (arr[i] >= 90)
@@ -34,7 +36,7 @@ int main() {
             cout << sub[i] << ": F" << endl;
     }
 
-    cout << "\nOverall Grade: ";
+    cout << "-------------------" << "\n=> Overall Grade: ";
     if (percentage >= 90)
         cout << "A+" << endl;
     else if (percentage >= 80)
@@ -47,7 +49,7 @@ int main() {
         cout << "C" << endl;
     else
         cout << "F" << endl;
-
+    cout << "-------------------" << endl;
     getch();
     return 0;
 }
