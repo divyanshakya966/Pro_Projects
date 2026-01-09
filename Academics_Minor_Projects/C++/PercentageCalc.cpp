@@ -2,6 +2,13 @@
 #include <conio.h>
 using namespace std;
 
+int PercentageCalc();
+
+int main() {
+    PercentageCalc();
+    return 0;
+}
+
 int PercentageCalc() {
     char choice;
     do {
@@ -58,10 +65,5 @@ int PercentageCalc() {
         cin >> choice;
     } while (choice == 'y' || choice == 'Y');
 
-    return 0;
-}
-
-int main() {
-    PercentageCalc();
     return 0;
 }
